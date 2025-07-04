@@ -1,0 +1,4 @@
+1- create aws account: 
+1- Create Github repo and push the verona primeng template into it.
+1- client id: 294jljvu34snu0nd4cm8fqf9bu
+1- user pool id: eu-north-1_DVT3Zga6h
