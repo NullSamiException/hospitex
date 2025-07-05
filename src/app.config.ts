@@ -28,7 +28,7 @@ export const appConfig: ApplicationConfig = {
                 redirectUrl: "http://localhost:4200/",
                 responseType: "code",
                 useRefreshToken: true,
-                scope: "email openid phone",
+                scope: "email openid phone offline_access",
             },
         }),
     ],

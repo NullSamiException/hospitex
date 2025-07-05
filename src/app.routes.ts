@@ -4,14 +4,14 @@ import { inject } from '@angular/core';
 import { OidcSecurityService } from 'angular-auth-oidc-client';
 import { map } from 'rxjs/operators';
 
-// 👇 Protect authenticated routes
+// 👇 Prevent access to /auth/login if already logged in
 const authGuard: CanActivateFn = () => {
     const oidcSecurityService = inject(OidcSecurityService);
     const router = inject(Router);
 
-    return oidcSecurityService.isAuthenticated$.pipe(
-        map((isAuthenticated) => {
-            if (isAuthenticated) {
+    return oidcSecurityService.checkAuth().pipe(
+        map((authResult) => {
+            if (authResult.isAuthenticated) {
                 console.log('✅ User is authenticated');
                 return true;
             } else {
@@ -22,21 +22,6 @@ const authGuard: CanActivateFn = () => {
     );
 };
 
-// 👇 Prevent access to /auth/login if already logged in
-const loginGuard: CanActivateFn = () => {
-    const oidcSecurityService = inject(OidcSecurityService);
-    const router = inject(Router);
-
-    return oidcSecurityService.isAuthenticated$.pipe(
-        map((isAuthenticated) => {
-            if (isAuthenticated) {
-                console.log('🔄 Already authenticated → redirecting to /');
-                return router.createUrlTree(['/']);
-            }
-            return true;
-        })
-    );
-};
 
 export const appRoutes: Routes = [
     {
@@ -56,7 +41,7 @@ export const appRoutes: Routes = [
     },
     {
         path: 'auth',
-        canActivate: [loginGuard],
+        canActivate: [authGuard],
         loadChildren: () => import('@/pages/auth/auth.routes')
     },
     { path: 'landing', loadComponent: () => import('@/pages/landing/landing').then(c => c.Landing) },
