@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -10,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { IconField } from 'primeng/iconfield';
 import { InputIcon } from 'primeng/inputicon';
 import { FormsModule } from '@angular/forms';
+import { OidcSecurityService } from 'angular-auth-oidc-client';
 
 @Component({
     selector: '[app-topbar]',
@@ -85,7 +86,7 @@ import { FormsModule } from '@angular/forms';
                             </a>
                             <a pRipple class="flex p-2 rounded-border items-center hover:bg-emphasis transition-colors duration-150 cursor-pointer">
                                 <i class="pi pi-power-off !mr-4"></i>
-                                <span class="hidden sm:inline">Sign Out</span>
+                                <span class="hidden sm:inline" (click)="logout()">Sign Out</span>
                             </a>
                         </li>
                     </ul>
@@ -98,6 +99,7 @@ import { FormsModule } from '@angular/forms';
     }
 })
 export class AppTopbar {
+    private readonly oidcSecurityService = inject(OidcSecurityService);
     menu: MenuItem[] = [];
 
     @ViewChild('searchinput') searchInput!: ElementRef;
@@ -162,4 +164,10 @@ export class AppTopbar {
         layoutState.configSidebarVisible = !layoutState.configSidebarVisible;
         this.layoutService.layoutState.set(layoutState);
     }
+
+    logout(): void {
+        console.log('🚪 Logging out...');
+        this.oidcSecurityService.logoff(window.location.origin + '/auth/login');
+    }
+
 }
