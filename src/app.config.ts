@@ -27,6 +27,7 @@ export const appConfig: ApplicationConfig = {
                 clientId: "294jljvu34snu0nd4cm8fqf9bu",
                 redirectUrl: "http://localhost:4200/",
                 responseType: "code",
+                useRefreshToken: true,
                 scope: "email openid phone",
             },
         }),
