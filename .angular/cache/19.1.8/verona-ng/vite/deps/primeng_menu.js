@@ -1,20 +1,25 @@
 import {
-  Tooltip,
-  TooltipModule
-} from "./chunk-RPJJCQH2.js";
-import {
   Badge,
   BadgeModule
 } from "./chunk-IREEA2SJ.js";
 import {
+  Tooltip,
+  TooltipModule
+} from "./chunk-RPJJCQH2.js";
+import {
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-MYYVJL33.js";
+import {
   ConnectedOverlayScrollHandler
 } from "./chunk-5G7WYC4N.js";
 import {
-  zindexutils
-} from "./chunk-37UJSS37.js";
-import {
   Ripple
 } from "./chunk-HKE6NKRI.js";
+import {
+  zindexutils
+} from "./chunk-37UJSS37.js";
 import {
   BaseComponent
 } from "./chunk-PNKU6JVV.js";
@@ -38,22 +43,17 @@ import {
   uuid
 } from "./chunk-GFVF2TMO.js";
 import {
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-MYYVJL33.js";
-import {
   animate,
   style,
   transition,
   trigger
 } from "./chunk-3UYOWTW4.js";
-import "./chunk-US7LRVFB.js";
-import "./chunk-PXYLXCRT.js";
 import {
   DomSanitizer
 } from "./chunk-I73ZT3GV.js";
 import "./chunk-XKMN4WD3.js";
+import "./chunk-US7LRVFB.js";
+import "./chunk-PXYLXCRT.js";
 import {
   CommonModule,
   NgClass,

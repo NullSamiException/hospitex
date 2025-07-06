@@ -33,8 +33,6 @@ import {
   removeClass
 } from "./chunk-GFVF2TMO.js";
 import "./chunk-3UYOWTW4.js";
-import "./chunk-US7LRVFB.js";
-import "./chunk-PXYLXCRT.js";
 import {
   DomSanitizer
 } from "./chunk-I73ZT3GV.js";
@@ -42,6 +40,8 @@ import {
   HttpClient,
   HttpEventType
 } from "./chunk-XKMN4WD3.js";
+import "./chunk-US7LRVFB.js";
+import "./chunk-PXYLXCRT.js";
 import {
   CommonModule,
   NgClass,

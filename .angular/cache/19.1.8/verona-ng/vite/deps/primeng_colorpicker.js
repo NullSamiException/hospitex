@@ -27,6 +27,9 @@ import {
   relativePosition
 } from "./chunk-GFVF2TMO.js";
 import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-P5LPBBT3.js";
+import {
   animate,
   style,
   transition,
@@ -34,9 +37,6 @@ import {
 } from "./chunk-3UYOWTW4.js";
 import "./chunk-US7LRVFB.js";
 import "./chunk-PXYLXCRT.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-P5LPBBT3.js";
 import {
   CommonModule,
   NgClass,
