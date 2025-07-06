@@ -25,6 +25,7 @@ export const appConfig: ApplicationConfig = {
                 authority: 'https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_DVT3Zga6h',
                 clientId: '294jljvu34snu0nd4cm8fqf9bu',
                 redirectUrl: 'http://localhost:4200/',
+                postLogoutRedirectUri: window.location.origin + '/auth/login',
                 responseType: 'code',
                 useRefreshToken: true,
                 scope: 'openid email phone profile'

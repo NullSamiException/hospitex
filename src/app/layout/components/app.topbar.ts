@@ -108,7 +108,7 @@ export class AppTopbar {
 
     searchActive: boolean = false;
 
-    constructor(public layoutService: LayoutService) {}
+    constructor(public layoutService: LayoutService) { }
 
     onMenuButtonClick() {
         this.layoutService.onMenuToggle();
@@ -166,7 +166,13 @@ export class AppTopbar {
     }
 
     logout(): void {
-        console.log('🚪 Logging out...');
-        this.oidcSecurityService.logoff(window.location.origin + '/auth/login');
+       console.log('🚪 Logging out...');
+    const logoutUrl = 
+        'https://eu-north-1dvt3zga6h.auth.eu-north-1.amazoncognito.com/logout' +
+        '?client_id=294jljvu34snu0nd4cm8fqf9bu' + 
+        '&logout_uri=' + encodeURIComponent('http://localhost:4200/auth/login');
+
+    window.location.href = logoutUrl;
+
     }
 }
