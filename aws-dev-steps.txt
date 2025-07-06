@@ -4,3 +4,9 @@
 1- user pool id: eu-north-1_DVT3Zga6h
 1- Authority Domain: https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_DVT3Zga6h
 1- testing user dev1@app.com   pass: App@12345
+1- aws account: 
+
+steps of development
+1- create aws account: 
+1- Create Github repo and push the verona primeng template into it.
+1- PKCE (Proof Key for Code Exchange)

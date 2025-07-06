@@ -6,10 +6,6 @@ import {
   Badge,
   BadgeModule
 } from "./chunk-IREEA2SJ.js";
-import {
-  RouterLink,
-  RouterModule
-} from "./chunk-MYYVJL33.js";
 import "./chunk-5G7WYC4N.js";
 import {
   zindexutils
@@ -47,7 +43,10 @@ import {
   removeChild,
   uuid
 } from "./chunk-GFVF2TMO.js";
-import "./chunk-I73ZT3GV.js";
+import {
+  RouterLink,
+  RouterModule
+} from "./chunk-MYYVJL33.js";
 import {
   animate,
   style,
@@ -62,6 +61,7 @@ import {
   isPrintableCharacter,
   resolve
 } from "./chunk-PXYLXCRT.js";
+import "./chunk-I73ZT3GV.js";
 import "./chunk-XKMN4WD3.js";
 import {
   CommonModule,
@@ -130,8 +130,8 @@ import {
   ɵɵtextInterpolate1,
   ɵɵviewQuery
 } from "./chunk-YQZEX5Y4.js";
-import "./chunk-PEBH6BBU.js";
 import "./chunk-WPM5VTLQ.js";
+import "./chunk-PEBH6BBU.js";
 import "./chunk-4S3KYZTJ.js";
 import {
   __spreadProps,

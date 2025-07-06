@@ -7,11 +7,6 @@ import {
   BadgeModule
 } from "./chunk-IREEA2SJ.js";
 import {
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-MYYVJL33.js";
-import {
   ConnectedOverlayScrollHandler
 } from "./chunk-5G7WYC4N.js";
 import {
@@ -43,8 +38,10 @@ import {
   uuid
 } from "./chunk-GFVF2TMO.js";
 import {
-  DomSanitizer
-} from "./chunk-I73ZT3GV.js";
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-MYYVJL33.js";
 import {
   animate,
   style,
@@ -53,6 +50,9 @@ import {
 } from "./chunk-3UYOWTW4.js";
 import "./chunk-US7LRVFB.js";
 import "./chunk-PXYLXCRT.js";
+import {
+  DomSanitizer
+} from "./chunk-I73ZT3GV.js";
 import "./chunk-XKMN4WD3.js";
 import {
   CommonModule,
@@ -126,8 +126,8 @@ import {
   ɵɵtextInterpolate,
   ɵɵviewQuery
 } from "./chunk-YQZEX5Y4.js";
-import "./chunk-PEBH6BBU.js";
 import "./chunk-WPM5VTLQ.js";
+import "./chunk-PEBH6BBU.js";
 import "./chunk-4S3KYZTJ.js";
 import "./chunk-4MWRP73S.js";
 

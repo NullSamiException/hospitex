@@ -97,13 +97,11 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
         <div class="bg-surface-100 dark:bg-surface-950 h-screen w-screen flex items-center justify-center">
             <div class="bg-surface-0 dark:bg-surface-900 py-16 px-8 sm:px-16 shadow flex flex-col w-11/12 sm:w-[30rem]" style="border-radius: 14px">
                 <h1 class="font-bold text-2xl mt-0 mb-2">VERONA</h1>
-                <p class="text-muted-color mb-6">
-                    Welcome to the <strong>Verona Community</strong>, sign in to continue.
-                </p>
+                <p class="text-muted-color mb-6">Welcome to the <strong>Verona Community</strong>, sign in to continue.</p>
                 <p-button label="Sign In" styleClass="mb-6" (click)="login()"></p-button>
             </div>
         </div>
-    `,
+    `
 })
 export class Login {
     private readonly oidcSecurityService = inject(OidcSecurityService);

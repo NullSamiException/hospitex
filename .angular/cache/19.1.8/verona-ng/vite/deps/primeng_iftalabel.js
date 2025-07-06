@@ -1,7 +1,4 @@
 import {
-  RouterModule
-} from "./chunk-MYYVJL33.js";
-import {
   BaseComponent
 } from "./chunk-PNKU6JVV.js";
 import "./chunk-ZUPIO27T.js";
@@ -12,9 +9,12 @@ import {
   SharedModule
 } from "./chunk-PIJ2I2NR.js";
 import "./chunk-GFVF2TMO.js";
-import "./chunk-I73ZT3GV.js";
+import {
+  RouterModule
+} from "./chunk-MYYVJL33.js";
 import "./chunk-US7LRVFB.js";
 import "./chunk-PXYLXCRT.js";
+import "./chunk-I73ZT3GV.js";
 import "./chunk-XKMN4WD3.js";
 import {
   CommonModule
@@ -37,8 +37,8 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef
 } from "./chunk-YQZEX5Y4.js";
-import "./chunk-PEBH6BBU.js";
 import "./chunk-WPM5VTLQ.js";
+import "./chunk-PEBH6BBU.js";
 import "./chunk-4S3KYZTJ.js";
 import "./chunk-4MWRP73S.js";
 

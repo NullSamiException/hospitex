@@ -139,7 +139,7 @@ export class AppTopbar {
 
     get logo(): string {
         const path = '/layout/images/logo-';
-        const logo = this.layoutService.isDarkTheme() || this.layoutService.layoutConfig().layoutTheme === 'primaryColor'? 'light.png' : 'dark.png';
+        const logo = this.layoutService.isDarkTheme() || this.layoutService.layoutConfig().layoutTheme === 'primaryColor' ? 'light.png' : 'dark.png';
         return path + logo;
     }
 
@@ -169,5 +169,4 @@ export class AppTopbar {
         console.log('🚪 Logging out...');
         this.oidcSecurityService.logoff(window.location.origin + '/auth/login');
     }
-
 }

@@ -3,9 +3,6 @@ import {
 } from "./chunk-RLSPQGJE.js";
 import "./chunk-5G7WYC4N.js";
 import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-P5LPBBT3.js";
-import {
   StarFillIcon,
   StarIcon
 } from "./chunk-5EFHTG25.js";
@@ -27,6 +24,9 @@ import {
 } from "./chunk-GFVF2TMO.js";
 import "./chunk-US7LRVFB.js";
 import "./chunk-PXYLXCRT.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-P5LPBBT3.js";
 import {
   CommonModule,
   NgClass,
@@ -82,8 +82,8 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor
 } from "./chunk-YQZEX5Y4.js";
-import "./chunk-PEBH6BBU.js";
 import "./chunk-WPM5VTLQ.js";
+import "./chunk-PEBH6BBU.js";
 import "./chunk-4S3KYZTJ.js";
 import "./chunk-4MWRP73S.js";
 
